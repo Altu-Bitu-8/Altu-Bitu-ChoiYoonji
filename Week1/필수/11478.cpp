@@ -5,14 +5,14 @@
 using namespace std;
 
 int main() {
-    string s;
-    cin >> s;
+    string S;
+    cin >> S;
     set<string> substrings;
     
-    int length = s.length();
+    int length = S.length();
     for (int i = 0; i < length; ++i) {
         for (int j = 1; j <= length - i; ++j) {
-            substrings.insert(s.substr(i, j));
+            substrings.insert(S.substr(i, j));
         }
     }
     
