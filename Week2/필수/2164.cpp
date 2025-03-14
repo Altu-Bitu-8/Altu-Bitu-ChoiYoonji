@@ -4,13 +4,13 @@
 using namespace std;
 
 int main() {
-    int N;
-    cin >> N;
+    int n;
+    cin >> n;
     
     queue<int> q;
     
     // 1부터 N까지의 카드 번호를 큐에 삽입
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= n; i++) {
         q.push(i);
     }
     

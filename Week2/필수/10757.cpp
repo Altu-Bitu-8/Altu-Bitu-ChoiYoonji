@@ -21,9 +21,9 @@ string addLargeNumbers(string a, string b) {
 }
 
 int main() {
-    string A, B;
-    cin >> A >> B;
+    string a, b;
+    cin >> a >> b;
     
-    cout << addLargeNumbers(A, B) << "\n";
+    cout << addLargeNumbers(a, b) << "\n";
     return 0;
 }
