@@ -17,7 +17,7 @@ int getDigitSum(const string& serial) {
 }
 
 // 정렬 조건 정의
-bool serial_comparator(const string& a, const string& b) {
+bool serialComparator(const string& a, const string& b) {
     if (a.length() != b.length()) {
         return a.length() < b.length();
     }
@@ -38,7 +38,7 @@ int main() {
         cin >> serials[i];
     }
     
-    sort(serials.begin(), serials.end(), serial_comparator);
+    sort(serials.begin(), serials.end(), serialComparator);
     
     for (const string& serial : serials) {
         cout << serial << "\n";
